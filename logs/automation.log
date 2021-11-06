@@ -1,0 +1,49 @@
+11-06-2021 21:03:24[INFO ] - [execution.WebPhases / feature] - 
+
+
+======================== START THE TEST FOR FEATURE >>>> Searching on Google ========================
+11-06-2021 21:03:24[INFO ] - [config.FrameworkConfig / getProperties] - Loaded configuration properties from external file >>> src/main/resources/frameworkconfig.properties
+11-06-2021 21:03:38[INFO ] - [execution.WebPhases / scenario] - ------------ START THE TEST FOR SCENARIO >>>> Direct search on Google Chrome ------------
+11-06-2021 21:03:39[INFO ] - [execution.WebPhases / eof] - 
+======================== END THE TEST FOR FEATURE >>>> Searching on Google ========================
+
+
+
+11-06-2021 21:05:39[INFO ] - [execution.WebPhases / feature] - 
+
+
+======================== START THE TEST FOR FEATURE >>>> Searching on Google ========================
+11-06-2021 21:05:39[INFO ] - [config.FrameworkConfig / getProperties] - Loaded configuration properties from external file >>> src/main/resources/frameworkconfig.properties
+11-06-2021 21:08:03[INFO ] - [execution.WebPhases / feature] - 
+
+
+======================== START THE TEST FOR FEATURE >>>> Searching on Google ========================
+11-06-2021 21:08:03[INFO ] - [config.FrameworkConfig / getProperties] - Loaded configuration properties from external file >>> src/main/resources/frameworkconfig.properties
+11-06-2021 21:08:12[INFO ] - [execution.WebPhases / scenario] - ------------ START THE TEST FOR SCENARIO >>>> Direct search on Google Chrome ------------
+11-06-2021 21:08:13[INFO ] - [execution.WebPhases / eof] - 
+======================== END THE TEST FOR FEATURE >>>> Searching on Google ========================
+
+
+
+11-06-2021 21:10:29[INFO ] - [execution.WebPhases / feature] - 
+
+
+======================== START THE TEST FOR FEATURE >>>> Searching on Google ========================
+11-06-2021 21:10:29[INFO ] - [config.FrameworkConfig / getProperties] - Loaded configuration properties from external file >>> src/main/resources/frameworkconfig.properties
+11-06-2021 21:10:35[INFO ] - [execution.WebPhases / scenario] - ------------ START THE TEST FOR SCENARIO >>>> Direct search on Google Chrome ------------
+11-06-2021 21:10:47[INFO ] - [execution.WebPhases / eof] - 
+======================== END THE TEST FOR FEATURE >>>> Searching on Google ========================
+
+
+
+11-06-2021 21:53:00[INFO ] - [execution.WebPhases / feature] - 
+
+
+======================== START THE TEST FOR FEATURE >>>> Searching weather on weather map ========================
+11-06-2021 21:53:00[INFO ] - [config.FrameworkConfig / getProperties] - Loaded configuration properties from external file >>> src/main/resources/frameworkconfig.properties
+11-06-2021 21:53:05[INFO ] - [execution.WebPhases / scenario] - ------------ START THE TEST FOR SCENARIO >>>> Direct search on Google Chrome ------------
+11-06-2021 21:53:28[INFO ] - [execution.WebPhases / eof] - 
+======================== END THE TEST FOR FEATURE >>>> Searching weather on weather map ========================
+
+
+

@@ -1,0 +1,107 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5140508450,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestSteps.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 115007,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SearchGoogleSteps.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 125982,
+              "status": "passed"
+            },
+            "match": {
+              "location": "WeatherMapSteps.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Direct search on Google Chrome",
+        "description": "",
+        "id": "searching-weather-on-weather-map;direct-search-on-google-chrome",
+        "after": [
+          {
+            "result": {
+              "duration": 256871924,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SearchGoogleSteps.tearDown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 40795,
+              "status": "passed"
+            },
+            "match": {
+              "location": "WeatherMapSteps.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 11862695865,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigates to the URL \u0027https://openweathermap.org/\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://openweathermap.org/",
+                  "offset": 27
+                }
+              ],
+              "location": "WeatherMapSteps.user_navigates_to_the_URL(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10011135085,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user wait for 10 seconds",
+            "match": {
+              "location": "WeatherMapSteps.userWaitFor10Seconds()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@parallel"
+          }
+        ]
+      }
+    ],
+    "name": "Searching weather on weather map",
+    "description": "",
+    "id": "searching-weather-on-weather-map",
+    "keyword": "Feature",
+    "uri": "src/test/java/features/Weathermap.feature"
+  }
+]

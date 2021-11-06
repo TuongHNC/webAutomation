@@ -23,12 +23,14 @@ public class ExtentManager {
 
     public static String encodedBase64image = null;
 
-    public static String fileName = "Extent_" + d.toString().replace(":", "_").replace(" ", "_") + ".html";
+    public static String fileName = "Extent_" + d.toString().replace(":", "_")
+            .replace(" ", "_") + ".html";
 
     public static ExtentReports getReporter() {
         if (extentReports == null) {
 
-            ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "/reports/" + fileName);
+            ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(
+                    System.getProperty("user.dir") + "/reports/" + fileName);
 
             htmlReporter.config().setTheme(Theme.STANDARD);
             htmlReporter.config().setDocumentTitle(fileName);
@@ -48,14 +50,18 @@ public class ExtentManager {
 
     public static void captureScreenshot() {
         i = i + 1;
-        File scrFile = ((TakesScreenshot) DriverManagerFactory.getExistingManager().getDriver()).getScreenshotAs(OutputType.FILE);
+        File scrFile = ((TakesScreenshot) DriverManagerFactory.getExistingManager()
+                .getDriver()).getScreenshotAs(OutputType.FILE);
 
         Date d = new Date();
-        screenshotName = d.toString().replace(":", "_").replace(" ", "_") + "_" + i + ".jpg";
+        screenshotName = d.toString().replace(":", "_")
+                .replace(" ", "_") + "_" + i + ".jpg";
 
         try {
-            FileUtils.copyFile(scrFile, new File(System.getProperty("user.dir") + "/reports/" + screenshotName));
-            encodedBase64image = getBase64StringFromImage(System.getProperty("user.dir") + "/reports/" + screenshotName);
+            FileUtils.copyFile(scrFile,
+                    new File(System.getProperty("user.dir") + "/reports/" + screenshotName));
+            encodedBase64image = getBase64StringFromImage(System.getProperty("user.dir")
+                    + "/reports/" + screenshotName);
         } catch (IOException e) {
             e.printStackTrace();
         }

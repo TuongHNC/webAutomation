@@ -28,7 +28,6 @@ public class ExtentTestManager {
         String passLogg = "SCENARIO PASSED";
         Markup m = MarkupHelper.createLabel(passLogg, ExtentColor.GREEN);
         testReport.get().log(Status.PASS, m);
-        System.out.println("Tuong test abcccccc");
     }
 
     public static void logFail(String message) {
@@ -36,7 +35,6 @@ public class ExtentTestManager {
     }
 
     public static synchronized boolean addScreenShotsOnFailure() {
-        System.out.println("Tuong test abcccccc 222222222");
         String failureLogg = "SCENARIO FAILED";
         Markup m = MarkupHelper.createLabel(failureLogg, ExtentColor.RED);
         testReport.get().log(Status.FAIL, m);

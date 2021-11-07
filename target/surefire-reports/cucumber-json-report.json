@@ -6,31 +6,22 @@
         "before": [
           {
             "result": {
-              "duration": 13316848920,
+              "duration": 11057301431,
               "status": "passed"
             },
             "match": {
               "location": "CommonSteps.before(Scenario)"
             }
-          },
-          {
-            "result": {
-              "duration": 235891,
-              "status": "passed"
-            },
-            "match": {
-              "location": "WeatherMapSteps.setUp()"
-            }
           }
         ],
-        "line": 5,
-        "name": "Direct search on Open Weather Map",
+        "line": 13,
+        "name": "Direct search \"Ha Noi\" on Open Weather Map",
         "description": "",
-        "id": "searching-weather-on-weather-map;direct-search-on-open-weather-map",
+        "id": "searching-weather-on-weather-map;direct-search-\"\u003ccity-name\u003e\"-on-open-weather-map;;2",
         "after": [
           {
             "result": {
-              "duration": 2496028700,
+              "duration": 1716023844,
               "status": "passed"
             },
             "match": {
@@ -39,7 +30,7 @@
           },
           {
             "result": {
-              "duration": 2898198086,
+              "duration": 374947763,
               "status": "passed"
             },
             "match": {
@@ -48,19 +39,19 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 8777094167,
+              "duration": 15039368171,
               "status": "passed"
             },
-            "line": 6,
-            "name": "user navigates to the URL \u0027https://openweathermap.org/\u0027",
+            "line": 5,
+            "name": "user navigates to the URL \u0027https://openweathermap.org/find?q\u0027",
             "match": {
               "arguments": [
                 {
-                  "val": "https://openweathermap.org/",
+                  "val": "https://openweathermap.org/find?q",
                   "offset": 27
                 }
               ],
@@ -70,33 +61,188 @@
           },
           {
             "result": {
-              "duration": 10004812346,
+              "duration": 1209954663,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "input search \"Ha Noi\" into the search text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Ha Noi",
+                  "offset": 14
+                }
+              ],
+              "location": "WeatherMapSteps.inputSearchAbcIntoTheSearchTextField(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 329446577,
               "status": "passed"
             },
             "line": 7,
-            "name": "user wait for 10 seconds",
+            "name": "click on the search icon",
             "match": {
-              "location": "WeatherMapSteps.userWaitFor10Seconds()"
+              "location": "WeatherMapSteps.clickOnTheSearchIcon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 591939942,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "validate the result is displayed",
+            "match": {
+              "location": "WeatherMapSteps.validateTheResultIsDisplayed()"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 14717791547,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "click on the city name in the result",
+            "match": {
+              "location": "WeatherMapSteps.clickOnTheCityNameInTheResult()"
+            },
+            "keyword": "When "
           }
         ],
         "tags": [
           {
             "line": 3,
             "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1000499975,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.before(Scenario)"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Direct search \"Can Tho\" on Open Weather Map",
+        "description": "",
+        "id": "searching-weather-on-weather-map;direct-search-\"\u003ccity-name\u003e\"-on-open-weather-map;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 74524568,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.tearDown(Scenario)"
+            }
           },
+          {
+            "result": {
+              "duration": 354307621,
+              "status": "passed"
+            },
+            "match": {
+              "location": "WeatherMapSteps.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 29289610130,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigates to the URL \u0027https://openweathermap.org/find?q\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://openweathermap.org/find?q",
+                  "offset": 27
+                }
+              ],
+              "location": "WeatherMapSteps.user_navigates_to_the_URL(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1089686290,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "input search \"Can Tho\" into the search text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Can Tho",
+                  "offset": 14
+                }
+              ],
+              "location": "WeatherMapSteps.inputSearchAbcIntoTheSearchTextField(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 244745374,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "click on the search icon",
+            "match": {
+              "location": "WeatherMapSteps.clickOnTheSearchIcon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 683380686,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "validate the result is displayed",
+            "match": {
+              "location": "WeatherMapSteps.validateTheResultIsDisplayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 12921600178,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "click on the city name in the result",
+            "match": {
+              "location": "WeatherMapSteps.clickOnTheCityNameInTheResult()"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
           {
             "line": 3,
-            "name": "@Route"
-          },
-          {
-            "line": 3,
-            "name": "@KP-TC-5981"
-          },
-          {
-            "line": 4,
-            "name": "@testcasekey\u003dKP-TC-5981"
+            "name": "@SmokeTest"
           }
         ]
       }

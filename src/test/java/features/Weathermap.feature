@@ -1,7 +1,14 @@
 Feature: Searching weather on weather map
 
-  @SmokeTest @Route @KP-TC-5981
-  @testcasekey=KP-TC-5981
-  Scenario: Direct search on Open Weather Map
-    Given user navigates to the URL 'https://openweathermap.org/'
-    Then user wait for 10 seconds
+  @SmokeTest
+  Scenario Outline: Direct search "<city Name>" on Open Weather Map
+    Given user navigates to the URL 'https://openweathermap.org/find?q'
+    When input search "<city Name>" into the search text field
+    And click on the search icon
+    Then validate the result is displayed
+    When click on the city name in the result
+
+    Examples:
+      | city Name |
+      | Ha Noi    |
+      | Can Tho   |

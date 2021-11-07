@@ -1,6 +1,6 @@
 package driver;
 
-import config.FrameworkConfig;
+import configs.FrameworkConfig;
 import constants.LogConstants;
 import exception.WebApplicationFrameworkException;
 import org.openqa.selenium.Platform;
@@ -45,7 +45,7 @@ public class ChromeDriverManager extends AbstractDriverManager {
     @Override
     void createDriver() {
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--incognito");
+//        options.addArguments("--incognito");
         options.addArguments("disable-infobars");
         options.addArguments("start-maximised");
         options.setAcceptInsecureCerts(Boolean.parseBoolean(

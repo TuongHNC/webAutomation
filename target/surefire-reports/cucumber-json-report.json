@@ -1,0 +1,110 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 13316848920,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 235891,
+              "status": "passed"
+            },
+            "match": {
+              "location": "WeatherMapSteps.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Direct search on Open Weather Map",
+        "description": "",
+        "id": "searching-weather-on-weather-map;direct-search-on-open-weather-map",
+        "after": [
+          {
+            "result": {
+              "duration": 2496028700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.tearDown(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 2898198086,
+              "status": "passed"
+            },
+            "match": {
+              "location": "WeatherMapSteps.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8777094167,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user navigates to the URL \u0027https://openweathermap.org/\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://openweathermap.org/",
+                  "offset": 27
+                }
+              ],
+              "location": "WeatherMapSteps.user_navigates_to_the_URL(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10004812346,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user wait for 10 seconds",
+            "match": {
+              "location": "WeatherMapSteps.userWaitFor10Seconds()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@SmokeTest"
+          },
+          {
+            "line": 3,
+            "name": "@Route"
+          },
+          {
+            "line": 3,
+            "name": "@KP-TC-5981"
+          },
+          {
+            "line": 4,
+            "name": "@testcasekey\u003dKP-TC-5981"
+          }
+        ]
+      }
+    ],
+    "name": "Searching weather on weather map",
+    "description": "",
+    "id": "searching-weather-on-weather-map",
+    "keyword": "Feature",
+    "uri": "src/test/java/features/Weathermap.feature"
+  }
+]

@@ -1,6 +1,6 @@
 package execution;
 
-import config.FrameworkConfig;
+import configs.FrameworkConfig;
 import driver.AbstractDriverManager;
 import driver.DriverManagerFactory;
 import driver.DriverType;

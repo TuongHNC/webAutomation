@@ -2,7 +2,7 @@ package helpers;
 
 import com.google.common.base.Function;
 import com.google.common.base.Predicate;
-import config.FrameworkConfig;
+import configs.FrameworkConfig;
 import driver.DriverManagerFactory;
 import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;

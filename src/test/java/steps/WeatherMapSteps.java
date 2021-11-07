@@ -33,5 +33,4 @@ public class WeatherMapSteps extends BaseSteps {
     public void userWaitFor10Seconds() {
         ActionWebUtils.sleep(10000);
     }
-
 }

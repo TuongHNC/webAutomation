@@ -1,6 +1,6 @@
 package driver;
 
-import config.FrameworkConfig;
+import configs.FrameworkConfig;
 import constants.LogConstants;
 import exception.WebApplicationFrameworkException;
 import org.openqa.selenium.WebDriver;
@@ -39,9 +39,10 @@ public class FireFoxDriverManager extends AbstractDriverManager {
 
     @Override
     void createDriver() {
-        FirefoxOptions options = new FirefoxOptions();
-        options.setCapability("marionette", false);
-        WebDriver driver = new FirefoxDriver(options);
+//        FirefoxOptions options = new FirefoxOptions();
+//        options.setCapability("marionette", false);
+        System.setProperty("webdriver.gecko.driver",FrameworkConfig.getInstance().getProperty("selenium.webdriver.firefoxbrowser.path"));
+        WebDriver driver = new FirefoxDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driverThreadLocal.set(driver);

@@ -5,10 +5,16 @@ Feature: Searching weather on weather map
     Given user navigates to the URL 'https://openweathermap.org/find?q'
     When input search "<city Name>" into the search text field
     And click on the search icon
-    Then validate the result is displayed
+    Then verify the result is displayed
     When click on the city name in the result
+    Then verify the current date time
+    Then verify the city and country name
+    Then validate the temperature display regardless its number
 
     Examples:
-      | city Name |
-      | Ha Noi    |
-      | Can Tho   |
+      | city Name       |
+      | Ha Noi, VN      |
+      | Can Tho, VN     |
+      | Ho Chi Minh, VN |
+      | Da Nang, VN     |
+      | Da Lat, VN      |

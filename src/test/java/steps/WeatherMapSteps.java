@@ -11,7 +11,6 @@ import helpers.DateTimeHelper;
 import org.testng.Assert;
 import pom.WeatherDetailPage;
 import pom.WeatherMapPage;
-import utilities.ActionWebUtils;
 import utilities.ParseUtils;
 
 public class WeatherMapSteps extends BaseSteps {
@@ -80,8 +79,6 @@ public class WeatherMapSteps extends BaseSteps {
 
     @Then("^validate the temperature display regardless its number$")
     public void validateTheTemperatureDisplayRegardlessItsNumber() {
-        System.out.println("The temperature number is: " + weatherDetailPage.getTextTemperature().split("\\u00B0")[0]);
-
         // Split the string and get number before the degree symbol (\\u00B0)
         String temperatureNumber = weatherDetailPage.getTextTemperature().split("\\u00B0")[0];
 

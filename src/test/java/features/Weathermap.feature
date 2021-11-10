@@ -13,7 +13,7 @@ Feature: Searching weather on weather map
 
     Examples:
       | city Name       |
-      | Ha Noi, VN      |
+      | Hanoi, VN      |
       | Can Tho, VN     |
       | Ho Chi Minh, VN |
       | Da Nang, VN     |

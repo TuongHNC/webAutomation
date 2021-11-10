@@ -1,6 +1,7 @@
 package steps;
 
 import com.aventstack.extentreports.Status;
+import configs.FrameworkConfig;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
@@ -11,6 +12,7 @@ import extentreport.ExtentTestManager;
 import gherkin.formatter.model.Result;
 import org.apache.commons.lang.reflect.FieldUtils;
 import utilities.ActionWebUtils;
+import utilities.FileDirUtils;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;
@@ -19,6 +21,9 @@ public class CommonSteps extends BaseSteps {
 
     @Before("@SmokeTest")
     public void before(Scenario scenario) {
+        // Check the folder reports exist or not
+        FileDirUtils.checkIfDirectoryExist(FrameworkConfig.getInstance().getProperty("report.path"));
+
         ActionWebUtils.sleep(1000);
         ExtentTestManager.startTest(scenario.getName(), scenario.getSourceTagNames().toString());
         ExtentTestManager.getTest().log(Status.INFO, "Scenario started : - " + scenario.getName());

@@ -20,7 +20,7 @@ In order to utilise this project we need to have the following installed locally
 * Chrome browser version 95 (For the latest Chrome driver download at https://chromedriver.chromium.org/downloads)
 * Firefox browser 94 (latest Gecko Driver: https://github.com/mozilla/geckodriver/releases)
 * Fire fox
-* Java 1.8
+* Java 8
 
 ## How to run
 Stand on the root folder, type command:<br>

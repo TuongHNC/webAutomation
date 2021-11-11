@@ -37,10 +37,39 @@ After run the test, report will be generated in the folder ```reports```
 ## CI-CD Integration
 
 ### Integrate with GitHub
+* Click on Action button
+
+![img.png](setup/action.png)
+
+* Click on button "Set up this workflow"
+
+![img.png](setup/create_new.png)
+
+* Edit file and commit
+
+![img.png](setup/edit_file.png)
+
+![img.png](setup/commit.png)
+
+* Navigate to Action tab again to see all flow
+
+![img.png](setup/all_workflow.png)
 
 ### Create PR
+* Make change from branch ```develop``` and commit
+* Create a pull request to ```master``` from ```develop```
 
-### Log
+![img.png](img_pr/pr_checking.png)
+
+* We can check log by clicking on Detail hyperlink
+
+![img.png](img_pr/pr_log.png)
+
+![img.png](img_pr/pr_extendLog.png)
+
+* After that, we can merge code if the process runs successfully
+
+![img.png](img_pr/pr_success.png)
 
 ### Refer to
 https://www.lambdatest.com/blog/selenium-github-actions-example/

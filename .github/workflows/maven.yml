@@ -1,7 +1,7 @@
 # This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
 # For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
 
-name: Clean test
+name: Java CI with Maven
 
 on:
   push:
@@ -11,15 +11,22 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
+  CleanTest:
 
-    runs-on: macos-10.15
+    runs-on: macos-latest
 
     steps:
     - uses: actions/checkout@v2
     
     - name: Clean test
       run: mvn clean
+      
+  RunTest:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
     
-#     - name: Run test
-#       run: mvn test
+    - name: Clean test
+      run: mvn test

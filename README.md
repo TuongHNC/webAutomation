@@ -37,7 +37,7 @@ After run the test, report will be generated in the folder ```reports```
 ## CI-CD Integration
 
 ### Integrate with GitHub
-* Click on Action button.
+* Click on Action button
 
 ![img.png](setup/action.png)
 

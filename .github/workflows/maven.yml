@@ -12,7 +12,7 @@ on:
 jobs:
   build:
 
-    runs-on: macos-latest
+    runs-on: macos-10.15
 
     steps:
     - uses: actions/checkout@v2
@@ -23,4 +23,5 @@ jobs:
 #         distribution: 'adopt'
 #         cache: maven
     - name: Build with Maven
-      run: mvn -B package --file pom.xml test
+#       run: mvn -B package --file pom.xml test
+      run: mvn clean test -DsuiteFile=testAutomation.xml

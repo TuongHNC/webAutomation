@@ -57,19 +57,19 @@ After run the test, report will be generated in the folder ```reports```
 
 ### Create PR
 * Make change from branch ```develop``` and commit
-* Create a pull request to ```master``` from ```develop```
+* Create a pull request to ```master``` from ```develop```.
 
-![img.png](img_pr/pr_checking.png)
+![img.png](img_pr/pr_Checking.png)
 
 * We can check log by clicking on Detail hyperlink
 
-![img.png](img_pr/pr_log.png)
+![img.png](img_pr/pr_Log.png)
 
-![img.png](img_pr/pr_extendLog.png)
+![img.png](img_pr/pr_ExtendLog.png)
 
 * After that, we can merge code if the process runs successfully
 
-![img.png](img_pr/pr_success.png)
+![img.png](img_pr/pr_Success.png)
 
 ### Refer to
 https://www.lambdatest.com/blog/selenium-github-actions-example/

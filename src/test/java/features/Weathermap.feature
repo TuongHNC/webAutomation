@@ -15,6 +15,6 @@ Feature: Searching weather on weather map
       | city Name       |
       | Hanoi, VN      |
       | Can Tho, VN     |
-      | Ho Chi Minh, VN |
-      | Da Nang, VN     |
+#      | Ho Chi Minh, VN |
+#      | Da Nang, VN     |
       | Da Lat, VN      |

@@ -2,7 +2,7 @@
 
 A sample Automation framework that using Selenium, Cucumber and Java to run a simple test case on the website https://openweathermap.org/ <br>
 
-### Tools
+## Tools
 
 * Maven
 * Cucumber-JVM
@@ -33,3 +33,14 @@ This project is running on Chrome by default. To run Firefox, edit as below in /
 After run the test, report will be generated in the folder ```reports```
 
 ![img.png](extentReport.png)
+
+## CI-CD Integration
+
+### Integrate with GitHub
+
+### Create PR
+
+### Log
+
+### Refer to
+https://www.lambdatest.com/blog/selenium-github-actions-example/
